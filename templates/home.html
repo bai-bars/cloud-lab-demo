@@ -1,10 +1,8 @@
-<!-- templates/home.html -->
 {% extends 'base.html' %}
 {% block content %}
     {% for post in object_list %}
         <div class="post-entry">
-            <h3>{{forloop.counter}}<a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h3>
-            <p>{{ post.body }}</p>
+            <p><center>{{ post.body }}</center></p>
         </div>
         <br>
     {% endfor %}
